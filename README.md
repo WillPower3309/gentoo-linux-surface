@@ -1,5 +1,5 @@
 # gentoo-linux-surface
-This is an script that applies patches for Microsoft Surface devices onto the Gentoo Linux kernel.
+This is a shell script that applies patches for Microsoft Surface devices onto the Gentoo Linux kernel.
 
 ## Installation
 
