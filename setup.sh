@@ -34,11 +34,10 @@ fi
 if [ -e "$CONFIG_SRC" ]; then
     echo "Config for kernel $KERNEL_VER found!"
     echo "Merging Configs..."
-    sh "$KERNEL_PATH/scripts/kconfig/merge_config.sh" "$KERNEL_PATH/.config" "$CONFIG_SRC"
+    sh "$KERNEL_PATH/scripts/kconfig/merge_config.sh" -m "$KERNEL_PATH/.config" "$CONFIG_SRC"
 fi
 
 # Install kernel
 make -C "$KERNEL_PATH" "$MAKEFLAGS"
 make -C "$KERNEL_PATH" modules_install
 make -C "$KERNEL_PATH" install
-emerge -1v @module-rebuild
