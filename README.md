@@ -9,7 +9,7 @@ Device Drivers --->
    Character devices --->
       <*> Serial device bus --->
          [*] Serial device TTY port controller
-   [*] GPIO Support
+   [*] GPIO Support --->
       [*] /sys/class/gpio/... (sysfs interface)
 ```
 
