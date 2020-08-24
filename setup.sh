@@ -37,7 +37,8 @@ if [ -e "$CONFIG_SRC" ]; then
     sh "$KERNEL_PATH/scripts/kconfig/merge_config.sh" -m "$KERNEL_PATH/.config" "$CONFIG_SRC"
 fi
 
-# Install kernel
+######################### COMPILE & INSTALL #########################
+
 make -C "$KERNEL_PATH" "$MAKEFLAGS"
 make -C "$KERNEL_PATH" modules_install
 make -C "$KERNEL_PATH" install
