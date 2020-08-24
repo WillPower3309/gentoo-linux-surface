@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
+############################### SETUP ###############################
+
 # Check if script is being ran as root
 if [ "$(id -u)" -ne 0 ]; then
     echo "This script must be run as root."
     exit 1
 fi
-
-############################### SETUP ###############################
 
 cd /tmp
 git clone git://github.com/linux-surface/linux-surface.git
