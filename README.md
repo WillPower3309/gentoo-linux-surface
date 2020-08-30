@@ -13,6 +13,9 @@ Device Drivers --->
       [*] /sys/class/gpio/... (sysfs interface)
 ```
 
+https://cateee.net/lkddb/web-lkddb/INPUT_SOC_BUTTON_ARRAY.html
+need CONFIG_INPUT_SOC_BUTTON_ARRAY
+
 ## Installation
 
 ```
